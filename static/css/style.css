@@ -1,0 +1,69 @@
+
+
+/*
+Colours used
+Deep Purple: #1d1145
+Trapper Keeper Green: #0db4b9
+Pink Boot: #f2a1a1
+Modern Pink Backpack: #e76d89
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{ 
+    font-size: 10px;
+    height: 100%;
+}
+
+.header{
+    background: #1d1145;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    height: 30vh;
+}
+
+.main-heading{
+    box-sizing: border-box;
+    margin: 0 1rem;  
+    color: #e76d89;
+    font-size: 1.6rem; 
+}
+
+.icon{
+    color: #e76d89;
+    font-size: 2.5rem;
+    margin-right: .5rem;
+    padding: 1rem;
+}
+
+.container{
+    background-image: linear-gradient(to left, #e76d89, #f2a1a1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70vh;
+}
+
+.game-container{
+    background: #1d1145; 
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 2rem;
+    border: 4px solid #1d1145;
+    height: 10rem;
+}
+
+.game-label{
+    color: #f2a1a1;
+    font-weight: 500;
+    font-size: 1.8rem;
+    margin-right: 1rem;
+}
