@@ -115,4 +115,35 @@ body{
     .main-heading{
         font-size: 1.6rem;
     }
+
+    .game-container{
+        padding: 1rem 3rem;
+        width: 60%;
+    }
+
+    .game-label{
+        font-size: 2rem;
+        width: 60%;
+    }
+
+    .number-input{
+        width: 30%;
+    }
+
+    .number-button{
+        width: 70%;
+    }
+}
+
+@media only screen and (min-width: 992px){
+    .game-container{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem 4rem;
+        height: 35vh;
+        width: 35%;
+    }
 }
