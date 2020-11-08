@@ -24,15 +24,15 @@ body{
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: space-between;
-    height: 30vh;
+    justify-content: center;
+    height: 25vh;
 }
 
 .main-heading{
     box-sizing: border-box;
     margin: 0 1rem;  
     color: #e76d89;
-    font-size: 1.6rem; 
+    font-size: 1.2rem; 
 }
 
 .icon{
@@ -99,4 +99,10 @@ body{
 
 .number-button:active{
     transform: translateY(.5rem);
+}
+
+@media only screen and (min-width: 768px){
+    .header{
+        justify-content: space-evenly;
+    }
 }
