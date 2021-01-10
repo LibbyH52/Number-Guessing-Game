@@ -1,7 +1,7 @@
 /* jslint browser */
 
 const numberButton = document.querySelector('.number-button');
-let randomNumber = Math.floor(Math.random() * 101);
+let randomNumber = Math.floor(Math.random() * 100);
 let userNumber = 0;
 
 /*Function to inform user if guess is to high or too low comparing it  randomNumber*/
@@ -35,4 +35,3 @@ const checkNumber = () => {
 };
 
 numberButton.addEventListener('click', inputNumber);
-
