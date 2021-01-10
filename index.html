@@ -20,13 +20,30 @@
         </div>
     </header>
     <main class="main-container">
+        <div class="instructions">
+            <p class="info">I am thinking of a number that is greater than <span class="range">0</span> and less than <span class="range">100</span></p>    
+        </div>
         <div class="game-container">
             <div class="game-form">
-                <div class="form-group">
+                <div class="form-group" tabindex="0">
                     <label for="number" class="game-label">My number is:</label>
                     <input type="number" class="number-input" name="number" id="number" min="1" max="100">
                 </div>
                 <button class="number-button" type="submit">Check Number</button>
+            </div>
+            <div class="guesses">
+                <ul class="low">
+                    <li>Guesses</li>
+                    <li>Guesses</li>
+                    <li>Guesses</li>
+                    <li>Guesses</li>
+                </ul>
+                <ul class="high">
+                    <li>Guesses</li>
+                    <li>Guesses</li>
+                    <li>Guesses</li>
+                    <li>Guesses</li>
+                </ul>
             </div>
         </div>
     </main>
