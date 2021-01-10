@@ -1,6 +1,8 @@
 /* jslint browser */
 
 const numberButton = document.querySelector('.number-button');
+let tooLow = document.querySelector('div.low');
+let tooHigh = document.querySelector('div.high');
 let randomNumber = Math.floor(Math.random() * 100);
 let userNumber = 0;
 
@@ -11,16 +13,22 @@ const inputNumber = () => {
         document.querySelector('#number').value = '';
         alert('Please enter a valid number');
     } else {
+        let item = document.createElement("li");
+        let userGuess = '';
+        item.classList.add('list-item');
         if  (userNumber < 1 || userNumber > 100) {
             alert(`${userNumber} is not allowed. Please enter a whole between 0 and 100`); 
         } else if (userNumber < randomNumber) {
             alert(`${userNumber} is too low`);
+            tooLow.appendChild(item);
         } else if (userNumber > randomNumber) {
             alert(`${userNumber} is too high`);
+            tooHigh.appendChild(item);
         } else if (userNumber === randomNumber){
             alert(`Well done. The number was ${userNumber}`);
             window.location.reload();
         }
+        item.textContent = userNumber;
     }
    /*Clears input field*/  
     document.querySelector('#number').value = '';
