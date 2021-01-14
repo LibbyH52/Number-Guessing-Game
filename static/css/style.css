@@ -18,9 +18,20 @@ body{
 
 .header{
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
     height: 20vh;
+}
+
+.main-heading{
+    font-size: 1.25rem;
+    text-align: center;
+}
+
+.icon{
+    font-size: 1.4rem;
+    margin: .25rem;
+    padding: .5rem;
 }
 
 .main-container{
@@ -29,11 +40,21 @@ body{
     margin: 0 auto;
 }
 
+.instructions{
+    display: flex;
+    justify-content: center;
+}
+
+.info{
+    font-size: 1.2rem;
+    text-align: center;
+}
+
 .game-container{
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-between;
     height: 70vh;
     padding: 1rem;
