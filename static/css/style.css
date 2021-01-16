@@ -1,6 +1,9 @@
 /*
-Colours used
-
+#50F3A
+#CB2D6F
+#CCCCCC
+#14A098
+#0F292F
 */
 
 *{
@@ -14,7 +17,7 @@ body{
 }
 
 .header{
-    background: #123C69;
+    background: #0F292F;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -22,20 +25,20 @@ body{
 }
 
 .main-heading{
-    color:  #BAB2B5;
+    color:  #14A098;
     font-size: 1.25rem;
     text-align: center;
 }
 
 .icon{
-    color:  #BAB2B5;
+    color:  #14A098;
     font-size: 1.4rem;
     margin: .25rem;
     padding: .5rem;
 }
 
 .main-container{
-    background: #BAB2B5;
+    background: #CCCCCC;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -50,7 +53,7 @@ body{
 }
 
 .info{
-    color: #AC3B61;
+    color: #501F3A;
     font-size: 1.2rem;
     text-align: center;
 }
@@ -67,8 +70,8 @@ body{
 }
 
 .game-form{
-    background-color: #AC3B61;
-    border: 2px solid #AC3B61;
+    background-color: #501F3A;
+    border: 5px solid #501F3A;
     border-radius: 10PX;
     box-sizing: border-box;
     display: flex;
@@ -82,12 +85,15 @@ body{
 }
 
 .game-label{
+    color: #CCCCCC;
     display: inline-block;
     font-size: 1.1rem;
     text-align: right;
+    font-weight: 800;
 }
 
 .number-input{
+    color: #0F292F;
     font-size: 1.25rem;
     margin-left: 1rem;
     padding: 1rem .5rem;
@@ -96,9 +102,13 @@ body{
 }
 
 .number-button{
+    color: #501F3A;
+    background: #CCCCCC;
+    border: 2px solid #CCCCCC;
     display: block;
     border-radius: 5px;
     font-size: 1.1rem;
+    font-weight: 800;
     line-height: 2rem;
     padding: .25rem .5rem;
     margin: .5rem auto;
@@ -117,12 +127,15 @@ body{
 
 .guess-heading{
     align-self: center;
+    color: #0f290f;
     font-size: 1.4rem;
+    font-weight: 800;
 }
 
 .list-heading{
     font-size: 1.2rem;
     text-align: center;
+    color:  #0f290f;
 }
 
 .guess-lists{
@@ -144,8 +157,10 @@ body{
 }
 
 .list-item{
+    color: #0F292F;
     list-style: none;
     font-size: 1.1rem;
+    font-weight: 900;
     text-align: center;
 }
 
@@ -174,6 +189,21 @@ body{
 
     .guesses{
         width: 70%;
+    }
+
+    .guess-heading{
+        font-size: 1.6rem;
+        margin-bottom: .5rem;
+    }
+    
+    .list-heading{
+        font-size: 1.4rem;
+        font-weight: 500;
+    }
+    
+    .list-item{
+        font-size: 1.25rem;
+        font-weight: 300;
     }
 }
 
