@@ -4,6 +4,7 @@ const numberButton = document.querySelector('.number-button');
 let tooLow = document.querySelector('div.low');
 let tooHigh = document.querySelector('div.high');
 let randomNumber = Math.floor(Math.random() * 100);
+let info = document.querySelector('.info');
 let userNumber = 0;
 
 /*Function to inform user if guess is to high or too low comparing it  randomNumber*/
@@ -19,10 +20,10 @@ const inputNumber = () => {
         if  (userNumber < 1 || userNumber > 100) {
             alert(`${userNumber} is not allowed. Please enter a whole between 0 and 100`); 
         } else if (userNumber < randomNumber) {
-            alert(`${userNumber} is too low`);
+            info.textContent = `${userNumber} is too low`;
             tooLow.appendChild(item);
         } else if (userNumber > randomNumber) {
-            alert(`${userNumber} is too high`);
+            info.textContent = `${userNumber} is too high`;
             tooHigh.appendChild(item);
         } else if (userNumber === randomNumber){
             alert(`Well done. The number was ${userNumber}`);
