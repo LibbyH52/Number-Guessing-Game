@@ -252,6 +252,11 @@ body{
         flex: min-content 1;
         margin: 0 auto;
     }
+
+    .list-item{
+        font-size: 1.4rem;
+        font-weight: 500;
+    }
 }
 
 @media screen and (min-width: 992px){
