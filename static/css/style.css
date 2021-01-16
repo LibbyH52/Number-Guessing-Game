@@ -1,4 +1,5 @@
 /*
+Colour Scheme. No 48, available from https://visme.co/blog/website-color-schemes/
 #50F3A
 #CCCCCC
 #14A098
@@ -156,7 +157,7 @@ body{
 }
 
 .list-item{
-    color: #0F292F;
+    color: #501F3A;
     list-style: none;
     font-size: 1.1rem;
     font-weight: 900;
