@@ -1,6 +1,6 @@
 /*
 Colour Scheme. No 48, available from https://visme.co/blog/website-color-schemes/
-#50F3A
+#501F3A
 #CCCCCC
 #14A098
 #0F292F
@@ -113,6 +113,23 @@ body{
     padding: .25rem .5rem;
     margin: .5rem auto;
     width: 80%;
+    position: relative;
+    transition: all .2s;
+}
+
+.number-button:hover{
+    background: #501F3A;
+    box-shadow: 0 .5rem 1rem #CCCCCC;
+    color: #CCCCCC;
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.number-button:active,
+.btn:focus{
+    background: #501F3A;
+    box-shadow: .25rem .25rem .75rem #CCCCCC;
+    transform: translateY(-2px);
 }
 
 .guesses{
@@ -148,12 +165,6 @@ body{
 .low,
 .high{
     flex: 1;
-}
-
-.list{
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
 }
 
 .list-item{
