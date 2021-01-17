@@ -1,8 +1,8 @@
 /* jslint browser */
 
 const numberButton = document.querySelector('.number-button');
-let tooLow = document.querySelector('div.low');
-let tooHigh = document.querySelector('div.high');
+let tooLow = document.querySelector('.too-low');
+let tooHigh = document.querySelector('.too-high');
 let randomNumber = Math.floor(Math.random() * 100);
 let info = document.querySelector('.info');
 let userNumber = 0;
@@ -20,11 +20,13 @@ const inputNumber = () => {
         if  (userNumber < 1 || userNumber > 100) {
             alert(`${userNumber} is not allowed. Please enter a whole between 0 and 100`); 
         } else if (userNumber < randomNumber) {
-            info.textContent = `${userNumber} is too low`;
+            item.textContent = `${userNumber}`;
             tooLow.appendChild(item);
+            info.textContent = `${userNumber} is too low`;
         } else if (userNumber > randomNumber) {
-            info.textContent = `${userNumber} is too high`;
+            item.textContent = `${userNumber}`;
             tooHigh.appendChild(item);
+            info.textContent = `${userNumber} is too high`;
         } else if (userNumber === randomNumber){
             alert(`Well done. The number was ${userNumber}`);
             window.location.reload();
